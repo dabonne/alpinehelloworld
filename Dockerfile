@@ -6,7 +6,6 @@ RUN apk add --no-cache --update python3 py3-pip bash
 ADD ./webapp/requirements.txt /tmp/requirements.txt
 
 # Install dependencies
-RUN pip3 install --upgrade pip
 RUN pip3 install gunicorn
 RUN pip3 install Flask
 RUN pip3 install Jinja2
